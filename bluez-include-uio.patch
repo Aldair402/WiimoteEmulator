@@ -1,0 +1,21 @@
+--- tools/hciattach_qualcomm.c	2012-06-13 17:04:20.000000000 +0200
++++ tools/hciattach_qualcomm-patched.c	2024-11-12 19:40:29.296161803 +0100
+@@ -27,6 +27,7 @@
+ #endif
+ 
+ #include <stdio.h>
++#include <sys/uio.h>
+ #include <errno.h>
+ #include <fcntl.h>
+ #include <unistd.h>
+
+--- tools/hciattach_tialt.c	2012-06-13 17:04:20.000000000 +0200
++++ tools/hciattach_tialt-patched.c	2024-11-12 19:37:58.389273652 +0100
+@@ -26,6 +26,7 @@
+ #endif
+ 
+ #include <stdio.h>
++#include <sys/uio.h>
+ #include <errno.h>
+ #include <fcntl.h>
+ #include <unistd.h>
