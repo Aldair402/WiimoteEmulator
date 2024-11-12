@@ -10,7 +10,9 @@ cd bluez-4.101
 mkdir dist
 DIST=$(pwd)/dist
 cp ../bluez-disable-sdp.patch .
+cp ../bluez-include-uio.patch .
 patch -p0 < bluez-disable-sdp.patch
+patch -p0 < bluez-include-uio.patch
 ./configure --prefix=$DIST --with-systemdunitdir=$DIST/system --disable-service --disable-audio --disable-input --disable-serial
 make && make install
 
